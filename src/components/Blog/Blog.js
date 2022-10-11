@@ -32,13 +32,22 @@ const Blog = () => {
         <Accordion.Item eventKey="1">
           <Accordion.Header>Context API কীভাবে কাজ করে?</Accordion.Header>
           <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            <p>
+              প্রপ ড্রিলিং এড়িয়ে একটি কম্পোনেন্ট যদি এর ডিসেন্ড্যান্টদেরকে কোনো
+              ডাটা প্রোভাইড করতে চায়, তাহলে সমাধান হলো Context API।
+            </p>
+            <p>
+              createContext() দিয়েই শুরু। এই ফাংশন একটি Provider ও একটি Consumer
+              রিটার্ন করে।
+            </p>
+            <p>
+              Provider হলো ঐ কম্পোনেন্ট, যা কম্পোনেন্ট ট্রিতে এর
+              ডিসেন্ড্যান্টদেরকে স্টেট ডাটা প্রোভাইড করে।
+            </p>
+            <p>
+              Consumer হলো ঐ কম্পোনেন্ট, যে ঐ ডাটা কনজ্যুম করবে। অবশ্য
+              useContext হুক ব্যবহার করে Consumer কম্পোনেন্টের কাজ সহজ করা যায়।
+            </p>
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="2">
