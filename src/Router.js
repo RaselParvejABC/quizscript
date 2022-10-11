@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import ErrorPage from "./ErrorPage";
-import Topics from "./components/Topics/Topics";
+import Topics, { loader as topicsLoader } from "./components/Topics/Topics";
 
 const router = createBrowserRouter([
   {
@@ -11,6 +11,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
+        loader: topicsLoader,
         element: <Topics />,
       },
       {
