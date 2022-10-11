@@ -19,6 +19,7 @@ const router = createBrowserRouter([
       },
       {
         path: "stat",
+        loader: topicsLoader,
         element: <Stat />,
       },
       {
