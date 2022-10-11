@@ -53,13 +53,26 @@ const Blog = () => {
         <Accordion.Item eventKey="2">
           <Accordion.Header>useRef() হুক সম্পর্কে বলুন।</Accordion.Header>
           <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            <p>
+              এই হুক দুই রেন্ডারের মাঝে কোনো ভ্যালু পার্সিস্ট করতে সাহায্য করে।
+            </p>
+            <p>
+              এই হুক একটি মিউটেবল ref অবজেক্ট রিটার্ন করে, যার মিউটেবল current
+              প্রোপার্টি ইনিশিয়ালাইজ হয় এই হুকে দেওয়া আর্গুমেন্ট দিয়ে। এরপর
+              কম্পোনেন্ট রি-রেন্ডার হলেও এই হুক একই ref অবজেক্ট রিটার্ন করে;
+              কম্পোনেন্টের প্রতি রেন্ডারে নতুন ref অবজেক্ট ক্রিয়েট করে না। বরং
+              ১ম বারের অবজেক্টটিকেই বারবার রিটার্ন করে। ফলে এই অবজেক্টের current
+              প্রোপার্টিতে রাখা ভ্যালু রি-রেন্ডারের আগে-পরে একই থাকে।
+            </p>
+            <p>
+              এই হুকের মাধ্যমে এমন মিউটেবল ডাটা স্টোর করা যায়, যা চেঞ্জ হলে
+              কম্পোনেন্ট রি-রেন্ডার হবে না। আবার, অন্য কোনো কারণে রি-রেন্ডার
+              হলেও এর ভ্যালু চেঞ্জ হবে না।
+            </p>
+            <p>
+              এই হুকের একটি উল্লেখযোগ্য ব্যবহার হলো—কোনো ডম এলিমেন্টকে
+              ইম্পারেটিভলি এক্সেস করা।
+            </p>
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
