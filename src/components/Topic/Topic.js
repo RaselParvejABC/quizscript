@@ -15,7 +15,7 @@ const Topic = ({ topic }) => {
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>
-          Our {name} Quiz Contains {total} questions for you.
+          Our {name} Quiz Contains {total} questions.
         </Card.Text>
         <LinkContainer to={`test/${id}`}>
           <Button variant="primary" className="d-block">

@@ -16,7 +16,7 @@ const Topics = () => {
   const { topics } = useLoaderData();
   return (
     <Container>
-      <Row className="g-4">
+      <Row className="g-4 align-items-stretch">
         {topics.map((topic) => (
           <Col md={6} lg={4} key={topic.id}>
             <Topic topic={topic} />
