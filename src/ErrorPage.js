@@ -9,8 +9,8 @@ export default function ErrorPage() {
     <Container>
       <h1 className="text-center fs-1 mt-5">Oops!</h1>
       <p className="text-center">Sorry, an unexpected error has occurred.</p>
-      <p className="text-center">
-        <i>{error.statusText || error.message}</i>
+      <p className="text-center text-danger">
+        Technical Details: <i>{error.statusText || error.message}</i>
       </p>
     </Container>
   );
