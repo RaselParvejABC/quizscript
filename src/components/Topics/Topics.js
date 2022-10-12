@@ -18,6 +18,7 @@ const Topics = () => {
   return (
     <Container>
       <Banner />
+      <h3 className="fw-bold mb-4">Test Your Skills</h3>
       <Row className="g-4 align-items-stretch">
         {topics.map((topic) => (
           <Col md={6} lg={4} key={topic.id}>

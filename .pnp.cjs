@@ -39,6 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prop-types", "npm:15.8.1"],\
             ["react", "npm:18.2.0"],\
             ["react-bootstrap", "virtual:4bca0db68fca2c34be09dee311e0dbc1e72f486bb38cc891f94bf25d43b1c1037e3b54c49cadf35c153ece2f6d58b6cb827f6ab591fc92064e4b184e6970ce64#npm:2.5.0"],\
+            ["react-bootstrap-icons", "virtual:4bca0db68fca2c34be09dee311e0dbc1e72f486bb38cc891f94bf25d43b1c1037e3b54c49cadf35c153ece2f6d58b6cb827f6ab591fc92064e4b184e6970ce64#npm:1.9.1"],\
             ["react-dom", "virtual:4bca0db68fca2c34be09dee311e0dbc1e72f486bb38cc891f94bf25d43b1c1037e3b54c49cadf35c153ece2f6d58b6cb827f6ab591fc92064e4b184e6970ce64#npm:18.2.0"],\
             ["react-router-bootstrap", "virtual:4bca0db68fca2c34be09dee311e0dbc1e72f486bb38cc891f94bf25d43b1c1037e3b54c49cadf35c153ece2f6d58b6cb827f6ab591fc92064e4b184e6970ce64#npm:0.26.2"],\
             ["react-router-dom", "virtual:4bca0db68fca2c34be09dee311e0dbc1e72f486bb38cc891f94bf25d43b1c1037e3b54c49cadf35c153ece2f6d58b6cb827f6ab591fc92064e4b184e6970ce64#npm:6.4.2"],\
@@ -5667,6 +5668,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prop-types", "npm:15.8.1"],\
             ["react", "npm:18.2.0"],\
             ["react-bootstrap", "virtual:4bca0db68fca2c34be09dee311e0dbc1e72f486bb38cc891f94bf25d43b1c1037e3b54c49cadf35c153ece2f6d58b6cb827f6ab591fc92064e4b184e6970ce64#npm:2.5.0"],\
+            ["react-bootstrap-icons", "virtual:4bca0db68fca2c34be09dee311e0dbc1e72f486bb38cc891f94bf25d43b1c1037e3b54c49cadf35c153ece2f6d58b6cb827f6ab591fc92064e4b184e6970ce64#npm:1.9.1"],\
             ["react-dom", "virtual:4bca0db68fca2c34be09dee311e0dbc1e72f486bb38cc891f94bf25d43b1c1037e3b54c49cadf35c153ece2f6d58b6cb827f6ab591fc92064e4b184e6970ce64#npm:18.2.0"],\
             ["react-router-bootstrap", "virtual:4bca0db68fca2c34be09dee311e0dbc1e72f486bb38cc891f94bf25d43b1c1037e3b54c49cadf35c153ece2f6d58b6cb827f6ab591fc92064e4b184e6970ce64#npm:0.26.2"],\
             ["react-router-dom", "virtual:4bca0db68fca2c34be09dee311e0dbc1e72f486bb38cc891f94bf25d43b1c1037e3b54c49cadf35c153ece2f6d58b6cb827f6ab591fc92064e4b184e6970ce64#npm:6.4.2"],\
@@ -14365,6 +14367,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/react-dom",\
             "@types/react",\
             "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-bootstrap-icons", [\
+        ["npm:1.9.1", {\
+          "packageLocation": "./.yarn/cache/react-bootstrap-icons-npm-1.9.1-bfdf999226-1f2789f38c.zip/node_modules/react-bootstrap-icons/",\
+          "packageDependencies": [\
+            ["react-bootstrap-icons", "npm:1.9.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:4bca0db68fca2c34be09dee311e0dbc1e72f486bb38cc891f94bf25d43b1c1037e3b54c49cadf35c153ece2f6d58b6cb827f6ab591fc92064e4b184e6970ce64#npm:1.9.1", {\
+          "packageLocation": "./.yarn/__virtual__/react-bootstrap-icons-virtual-8746133877/0/cache/react-bootstrap-icons-npm-1.9.1-bfdf999226-1f2789f38c.zip/node_modules/react-bootstrap-icons/",\
+          "packageDependencies": [\
+            ["react-bootstrap-icons", "virtual:4bca0db68fca2c34be09dee311e0dbc1e72f486bb38cc891f94bf25d43b1c1037e3b54c49cadf35c153ece2f6d58b6cb827f6ab591fc92064e4b184e6970ce64#npm:1.9.1"],\
+            ["@types/react", null],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
             "react"\
           ],\
           "linkType": "HARD"\
