@@ -20,20 +20,20 @@ const Test = () => {
   const test = useLoaderData()["test"];
   const questions = test["questions"];
   const [userSelection, setUserSelection] = useState({});
-  const onNewSelection = (questionID, selectedIndex) => {
-    setUserSelection({ ...userSelection, questionID: selectedIndex });
+  const onNewSelection = (questionID, selectedAnswer) => {
+    setUserSelection({ ...userSelection, [questionID]: selectedAnswer });
   };
 
   return (
     <QuestionsContextProvider value={questions}>
       <UserSelectionContextProvider value={[userSelection, onNewSelection]}>
-        <Container>
+        <Container className="my-5">
           <Row>
-            <Col md={9} lg={10}>
+            <Col md={9}>
               <h2 className="text-primary text-center">{`${test["name"]} Test`}</h2>
               <TestQuestions />
             </Col>
-            <Col md={3} lg={2}>
+            <Col md={3}>
               <TestLiveScore />
             </Col>
           </Row>
