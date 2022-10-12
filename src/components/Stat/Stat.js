@@ -15,7 +15,6 @@ import { useLoaderData } from "react-router-dom";
 
 const Stat = () => {
   const { topics } = useLoaderData();
-  console.log(topics);
   return (
     <Container className="text-center d-flex flex-column justify-content-center">
       <h1 className="text-info fw-bold">
